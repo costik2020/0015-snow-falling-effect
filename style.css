@@ -33,7 +33,7 @@ snow:after,
 .snow:before {
 	content="";
 	position: absolute;
-	top: 0;
+	top: -650px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -48,4 +48,48 @@ snow:after,
 	radial-gradient(6px 6px at 250px 400px, #ffffff, transparent),
 	radial-gradient(3px 3px at 350px 500px, #ffffff, transparent);
 	background-size: 650px 650px;
+
+	animation: snowAnim 3s linear;
+	animation-iteration-count: infinite;
 }
+
+
+.snow:after{
+	margin: -250px;
+	opacity: 0.5;
+	filter: blur(2px);
+	animation-direction: reverse;
+	animation-duration: 6s;
+}
+
+
+.snow:before{
+	margin: -350px;
+	opacity: 0.7;
+	filter: blur(1spx);
+	animation-direction: reverse;
+	animation-duration: 9s;
+}
+
+
+
+@keyframes snowAnim {
+	from{
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(650px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
