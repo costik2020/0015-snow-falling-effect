@@ -28,7 +28,9 @@ body {
 
 
 /*Snow flake*/
-.snow, snow:after, .snow:before {
+.snow,
+snow:after,
+.snow:before {
 	content="";
 	position: absolute;
 	top: 0;
@@ -36,5 +38,14 @@ body {
 	right: 0;
 	bottom: 0;
 	background-image:
-	radial-gradient(4px 4px at 100px 50px, #ffffff, transparent);
+	radial-gradient(4px 4px at 100px 50px, #ffffff, transparent),
+	radial-gradient(6px 6px at 200px 150px, #ffffff, transparent),
+	radial-gradient(3px 3px at 300px 250px, #ffffff, transparent),
+	radial-gradient(4px 4px at 400px 350px, #ffffff, transparent),
+	radial-gradient(6px 6px at 500px 100px, #ffffff, transparent),
+	radial-gradient(3px 3px at 50px 200px, #ffffff, transparent),
+	radial-gradient(4px 4px at 150px 300px, #ffffff, transparent),
+	radial-gradient(6px 6px at 250px 400px, #ffffff, transparent),
+	radial-gradient(3px 3px at 350px 500px, #ffffff, transparent);
+	background-size: 650px 650px;
 }
